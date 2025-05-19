@@ -30,6 +30,6 @@ jsuser.greeting = function (){
 console.log(jsuser.greeting()); // if you are not adding () at the end of function then it will be just reference of function
 
 jsuser.greeting2 = function(){
-    console.log(`Hello there, ${this.name}`); //this is used to refer the current object
+    console.log(`Hello there, ${this.name}`); //  "this" is used to refer the current object
 }
-console
+console.log(jsuser.greeting2()); // this will print the name of object
