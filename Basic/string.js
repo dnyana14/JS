@@ -6,7 +6,7 @@ console.log(`Hello! My name is ${name} and my repocount is ${repocunt}` )  //thi
 
 const otherway = new String("Hello")   // another way to create string ; object is used to create string using new keyword
 console.log(otherway[3]) // [String: 'Hello'] 
-console.log(otherway.length) // 5
+console.log(otherway.length) 
 console.log(otherway.charAt(3)) // l whatever index you give it will give that character
 console.log(otherway.indexOf("l")) // it gives output of first l index number
 console.log(otherway.toUpperCase())
