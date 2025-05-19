@@ -13,6 +13,6 @@ const no = 23.8345
 console.log(no.toPrecision(3)) // it will convert the number to string with 3 decimal points
 
 const hundred = 10000
-console.log(hundred.toLocaleString('en-IN')) // it will convert the number to string with comma
+console.log(hundred.toLocaleString('en-IN')) // it will convert the number to string with comma (indian format)
 
 
