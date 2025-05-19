@@ -1,6 +1,6 @@
 const name = "Dnyana"
 const repocunt = 10
-console.log(`Hello! My name is ${name} and my repocount is ${repocunt}` ) 
+console.log(`Hello! My name is ${name} and my repocount is ${repocunt}` )  //this is called string interpolation, here we can use any variable inside the string using ${} and we can also use any expression inside it
 
 // other way to write string
 
