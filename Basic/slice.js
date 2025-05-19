@@ -9,6 +9,6 @@ console.log( "B",array)
 
 //Splice is used to add or remove elements from array
 const splicearray = array.splice(1 , 3 ,"hey") // remove 3 elements from index 1 to 3 and add "hey" at index 1
-console.log(splicearray) // removed elements
+console.log(splicearray) // removed elements from an array
 console.log( "C",array) // original array is modified
 
