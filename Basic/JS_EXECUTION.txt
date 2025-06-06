@@ -1,0 +1,77 @@
+Global scope means any variable or function that is declared outside of all functions or blocks can be accessed anywhere in your code.
+
+It’s like declaring something in the open — so everyone (all functions and blocks) can see and use it.
+
+
+
+When a JavaScript file first runs, all code that is not inside a function or block is part of the global execution context. This includes:
+
+Variable declarations (like let, var, const)
+
+Function declarations (like function greet() {})
+
+Any direct statements (like console.log())
+
+These are all part of the global execution phase.
+
+
+
+
+code file ======> Global Execution context (we put all the global execution context in this variable)
+
+global execution context
+function execution context
+eval execution context   ( it is property of global object)
+
+
+how js code execute =====>
+
+code === 
+Phase 1 = Creation or memory creation phase  (Locate a space whatever we declare variables)
+Phase 2 = Execution phase (Here all the code will execute)
+            s1 : Global Execution(is the first step where js starts executing the code, js engine creates s global execution context
+            and begin running the code)
+            When you open a web page or run a JavaScript file, the JavaScript engine (like V8 in Chrome) starts executing the code.
+             But before it does anything, it needs to understand what it's going to execute.
+
+            s2 : Memory Phase (collect all variables and store it )
+             {
+                here we can define the code
+
+                let val1 = 10                    //undefined
+                let val2 = 20                    //undefined
+
+                function addnum(num1, num2){
+                    total = num1 + num2
+                    
+                    return total                //defined (We include content that what should happen next)
+                   
+                 }
+                 let result1 = addnum(val1 + val2)   // undefined
+            
+                 let result2 = addnum(100, 200)      // undefined
+             }
+
+            s3 : Execution Phase
+            as refer to previous code 
+            value 10 will be execute in val1 and value 5 will be executed in val2
+
+            addnum ==>  (in this function (new var environment + execution thread))
+            //function creates seprate execution context 
+            // In the function execution phase and memory phase is repeated whenever the function is declared
+
+            addnum ====>  s1 : memory phase =
+                                            val1 = undefined
+                                            val2 = undefined
+                                            total = undefined 
+                           s2 : execution phase =
+                                            num1 == 100
+                                            num2 == 200
+                                            total == 300   (Total will be returned in the global executional context)
+
+    After completing the task of function, the executional context of function will be deleted
+
+
+
+    // Call Stack
+    
