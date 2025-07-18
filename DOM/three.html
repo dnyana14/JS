@@ -1,0 +1,32 @@
+<!-- Create new element in div -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element creation</title>
+</head>
+<body>
+    
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.classname = "style"
+    div.id = "myid"
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"  
+    // the div is in under memory ;  this styling is not applied until it is not attached to document
+
+    //div.innerText = "Chai our code"
+
+    const addtext = document.createTextNode("chai pur code")
+    div.appendChild(addtext)
+
+    document.body.appendChild(div) //div will be a child of body
+
+
+</script>
+</html>
