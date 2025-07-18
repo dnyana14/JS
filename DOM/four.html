@@ -1,0 +1,63 @@
+
+<!-- edit and remove elements-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Learning</title>
+</head>
+<body style = "background-color: #212121, color = #fff;">
+    <ul class = "language">
+        <li>
+            Javascript
+        </li>
+    </ul>
+    
+</body>
+
+<script>
+    function Addlang(lang) {
+    const li = document.createElement('li') ;      //creating a list item
+    li.innerHTML = `${lang}`
+    document.querySelector('.language').appendChild(li)
+    }
+    Addlang("Python")
+    Addlang("Java")
+    Addlang("cpp")
+
+    //It traverse all the trees again and again
+
+    //or
+    //optimized approach, here not needed to traverse all the tree
+    //It is useful in big project approach
+    function addoptilang(lang){
+         const li = document.createElement('li')
+
+         const addText = document.createTextNode(lang)
+         li.appendChild(addText)
+         //or for two lines =  li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+        addoptilang('golanguage')
+        }
+// whatever things under scope {} will cant access outside
+
+
+//Edit element 
+const secondlang = document.querySelector("li : nth-child(1)")
+
+// secondlang.innerHTML = "mojo" //this will edit text but this is not optimized way
+const newli = document.createElement('li')
+newli.textContent = "mojo"
+secondlang.replaceWith(newli)
+
+//one more ex. of edit
+const second = document.querySelector('li : first-child')
+second.outerHTML = "<li>Typescript</li>"
+
+//remove element
+
+const remove = document.querySelector('li:last-child')
+
+</script>
+</html>
