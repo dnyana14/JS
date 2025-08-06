@@ -16,7 +16,7 @@ const jsuser = {
 console.log(jsuser.email); // this is the best way to access the value of key in object but sometimes we need to use barcket notation in case of symbol
 console.log(jsuser["email"]);  
 console.log(jsuser["age"]); 
-console.log(jsuser[mysym]); // symbol as key   no need to add quotes
+console.log(jsuser[mysym]); // symbol as key, no need to add quotes
 
 jsuser.email = "Sandil12@gmail.com"; // we can change the values of keys in object
 //Object.freeze(jsuser); // now after using freeze () , it will not chanhe any values of object
