@@ -1,3 +1,9 @@
+//while = check first, then run, condition check first & then code will exwcute,  when you dont know how many times you want to repeat something, here condition check before loop start
+//do...while = "run first, then check"
+//A for loop is used when you know how many times you want to repeat something. here condition check before loop start
+//for...in loop Used to get keys (indexes or property names) from objects or arrays.
+//for...of loop Used to get values from arrays, strings, maps, sets, etc.
+//forEach doesn’t work on objects, only on arrays.
 
 let index = 0;
 while(index <= 10){

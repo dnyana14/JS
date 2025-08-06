@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <script>
+       document.addEventListener('DOMContentLoaded', function(){
+         document.querySelector('form').onsubmit = () => {
+            const task = document.querySelector('#task').value; // Get the value of the input field
+            document.querySelector('#task').value = ''; // Clear the input field after getting the value
+            const li = document.createElement('li');  // Create a new list item
+            li.innerHTML = task; // set the value of task as the content of the list item
+            document.querySelector('#tasks').append(li); //whatever the value of task is, it will be added to the list
+            return false; // Prevent the form from submitting and refreshing the page
+
+         }
+       })
+       
+    </script>
+</head>
+<body>
+    
+    <h1>Tasks</h1>
+    <ul id="tasks"></ul>
+    <form>
+        <input id="task" placeholder=" New Task" type="text">
+        <input type="submit" >
+    </form>
+</body>
+</html>

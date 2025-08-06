@@ -1,0 +1,32 @@
+<!-- API = which is the context in the web server
+ 
+well defined structure where to communicate the services in the internet with each other
+youe app is talk to other app
+
+json is transferring a data in the form of object -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency </title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('https://api.exchangeratesapi.io/latest?base=USD') // it is a function which is used to make a request to the server 
+                                                       // fetch is something known as promise 
+              
+            .then(response => {
+                return response.json(); // this is a promise which is used to convert the response into json format
+            })      
+                                        //what should I do when the promise should come back 
+            .then(data => {
+                console.log(data); // this is the data which is returned from the server
+            })                         
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

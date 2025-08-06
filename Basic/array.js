@@ -1,3 +1,9 @@
+// array is a collection of elements/items
+// it can be of any type, like numbers, strings, objects, etc.
+// arrays are mutable, meaning we can change their elements
+// array is itself an object in JavaScript
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // array of numbers
+
 const newarray = [2, 3, 4, 5, 6, 7, 8, 9, 10 , true, "hii"]; // we can add any type of data in array
 
 const newarray1 = new Array(2, 3, 4, 5); 

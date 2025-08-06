@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+ <script>
+ 
+    function toggleHello() {
+   const count = document.querySelector('h1');
+  
+  if (count.innerHTML === "Welcome to the Hello Page") {
+       count.innerHTML = "Hello, World!";
+   } else {
+       count.innerHTML = "Welcome to the Hello Page";
+   }
+
+ }
+ 
+
+ </script>
+</head>
+<body>
+    <h1>Welcome to the Hello Page</h1>
+    <button onclick="toggleHello()">Click here </button>
+
+</body>
+</html>

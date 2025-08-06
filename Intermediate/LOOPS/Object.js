@@ -1,7 +1,7 @@
 // Iterating over an object using for...in loop
 // for...in loop is used to iterate over the properties of an object
 // It iterates over the keys of the object
-// It is not recomme nded to use for...in loop for arrays as it iterates over the indices of the array   
+// It is not recommended to use for...in loop for arrays as it iterates over the indices of the array   
 // It is recommended to use for...of loop for arrays
 
 const myobj = {

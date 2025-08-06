@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code Improvement  </title>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            document.querySelector('#color').onchange = function(){
+                document.querySelector('#Hello').style.color = this.value; //this is the keyword that refers to the current element in the context of the event handler
+
+            }
+        });
+        
+    </script>
+</head>
+<body>
+    <h1 id ="Hello">Hello</h1>
+    <label for="color">Colour</label>
+    <select  id ="color">
+        <option value="black">Black </option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+</body>
+</html>

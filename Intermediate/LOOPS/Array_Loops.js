@@ -1,5 +1,5 @@
 //for of loop 
-// array // for...of loop is used to iterate over iterable objects like arrays, strings, maps, sets, etc.
+// for...of loop is used to iterate over iterable objects like arrays, strings, maps, sets, etc.
 // It provides a simpler syntax compared to for...in loop and is more efficient for iterating over arrays.
 
 const arr = [1, 2, 3, 4, 5];

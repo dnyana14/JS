@@ -16,7 +16,7 @@ obj.name = "Dnyana Patil"
 obj.welcome()
 
 
-//this function in oject
+//this function in object
 
 function chai(){
     let user ="Dnyana"
